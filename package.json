@@ -1,10 +1,10 @@
 {
   "name": "projeto-pagina-web",
   "version": "1.0.0",
-  "description": "Projeto Web Multitemático",
-  "main": "server/app.js",
+  "description": "Projeto-web",
+  "main": "Projeto-web/app.js",
   "scripts": {
-    "start": "node server/app.js"
+    "start": "node Projeto-web/app.js"
   },
   "dependencies": {
     "express": "^4.17.1",

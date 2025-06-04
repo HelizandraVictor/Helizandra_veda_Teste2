@@ -6,11 +6,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Configura o Express para servir arquivos estáticos da pasta public/
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../Projeto-web')));
 
 // Redireciona a raiz (/) para index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+    res.sendFile(path.join(__dirname, '../Projeto-web/index.html'));
 });
 
 // Configura o corpo das requisições como JSON
