@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, '../Projeto-web')));
 
 // Redireciona a raiz (/) para index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../Projeto-web/index.html'));
+    res.sendFile(path.join(__dirname, '../Projeto-web'));
 });
 
 // Configura o corpo das requisições como JSON
