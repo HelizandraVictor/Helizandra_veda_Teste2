@@ -5,12 +5,12 @@ const routes = require('./routes');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Configura o Express para servir arquivos estáticos da pasta public/
-app.use(express.static(path.join(__dirname, '../Projeto-web')));
+// Configura o Express para servir arquivos estáticos da pasta Projeto-web/ (raiz)
+app.use(express.static(path.join(__dirname)));
 
 // Redireciona a raiz (/) para index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../Projeto-web'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Configura o corpo das requisições como JSON
